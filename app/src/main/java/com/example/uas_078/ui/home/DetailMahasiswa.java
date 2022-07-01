@@ -79,7 +79,6 @@ public class DetailMahasiswa extends Fragment {
             public void onClick(View view) {
                 AlertDialog.Builder alert = new AlertDialog.Builder(getContext());
                 alert.setMessage("Yakin hapus data " + mhs_nama.getText().toString().trim() + "?");
-//                alert.setIcon(R.drawable.logo);
                 alert.setPositiveButton("Iya", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

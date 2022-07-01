@@ -41,14 +41,17 @@ public class FormMatakuliah extends Fragment {
             public void onClick(View view) {
                 AlertDialog.Builder alert = new AlertDialog.Builder(getContext());
                 alert.setMessage("Yakin simpan matakuliah " + mk_nama.getText().toString().trim() + "?");
-//                alert.setIcon(R.drawable.logo);
                 alert.setPositiveButton("Iya", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         db = new DBHelper(root.getContext());
                         long result = db.mk_tambah(mk_nama.getText().toString().trim(),mk_kode.getText().toString().trim(),mk_dosen.getText().toString().trim(),mk_sks.getText().toString().trim());
                         if(result != -1){
-                            Navigation.findNavController(view).navigate(R.id.action_formMatakuliah_to_nav_gallery);
+//                            Navigation.findNavController(view).navigate(R.id.action_formMatakuliah_to_nav_gallery);
+                            mk_nama.setText("");
+                            mk_kode.setText("");
+                            mk_dosen.setText("");
+                            mk_sks.setText("");
                         }
                     }
                 })
