@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.uas_078.ui.home.HomeFragment"
+        android:label="Data Mahasiswa"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_detailMahasiswa"
+            app:destination="@id/detailMahasiswa" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.uas_078.ui.gallery.GalleryFragment"
+        android:label="Data Matakuliah"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_nav_gallery_to_detailMatakuliah"
+            app:destination="@id/detailMatakuliah" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.uas_078.ui.slideshow.SlideshowFragment"
+        android:label="Tambah Sesuatu"
+        tools:layout="@layout/fragment_slideshow" >
+        <action
+            android:id="@+id/action_nav_slideshow_to_formMahasiswa"
+            app:destination="@id/formMahasiswa" />
+        <action
+            android:id="@+id/action_nav_slideshow_to_formMatakuliah"
+            app:destination="@id/formMatakuliah" />
+    </fragment>
+    <fragment
+        android:id="@+id/formMahasiswa"
+        android:name="com.example.uas_078.ui.slideshow.FormMahasiswa"
+        android:label="Tambah Mahasiswa"
+        tools:layout="@layout/fragment_form_mahasiswa" >
+        <action
+            android:id="@+id/action_formMahasiswa_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+        <action
+            android:id="@+id/action_formMahasiswa_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/formMatakuliah"
+        android:name="com.example.uas_078.ui.slideshow.FormMatakuliah"
+        android:label="Tambah Matakuliah"
+        tools:layout="@layout/fragment_form_matakuliah" >
+        <action
+            android:id="@+id/action_formMatakuliah_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+        <action
+            android:id="@+id/action_formMatakuliah_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailMahasiswa"
+        android:name="com.example.uas_078.ui.home.DetailMahasiswa"
+        android:label="Detail Mahasiswa"
+        tools:layout="@layout/fragment_detail_mahasiswa" >
+        <action
+            android:id="@+id/action_detailMahasiswa_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailMatakuliah"
+        android:name="com.example.uas_078.ui.gallery.DetailMatakuliah"
+        android:label="Detail Matakuliah"
+        tools:layout="@layout/fragment_detail_matakuliah" >
+        <action
+            android:id="@+id/action_detailMatakuliah_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+    </fragment>
+</navigation>

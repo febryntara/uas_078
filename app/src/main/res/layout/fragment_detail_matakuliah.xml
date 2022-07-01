@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ui.gallery.DetailMatakuliah">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Matakuliah"
+        android:id="@+id/detail_mk_nama"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kode"
+        android:layout_marginTop="5dp"
+        android:id="@+id/detail_mk_kode"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dosen Pengampu"
+        android:layout_marginTop="5dp"
+        android:id="@+id/detail_mk_dosen"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Jumlah SKS"
+        android:id="@+id/detail_mk_sks"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/orange"
+        android:layout_height="wrap_content"
+        android:text="Ubah"
+        android:id="@+id/detail_mk_ubah" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/orange"
+        android:layout_height="wrap_content"
+        android:text="Hapus"
+        android:id="@+id/detail_mk_hapus" />
+
+</LinearLayout>

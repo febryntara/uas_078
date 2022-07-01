@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ui.slideshow.FormMahasiswa">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama"
+        android:id="@+id/input_mhs_nama"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Program Studi"
+        android:layout_marginTop="5dp"
+        android:id="@+id/input_mhs_prodi"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nomor Induk Mahasiswa"
+        android:layout_marginTop="5dp"
+        android:id="@+id/input_mhs_nim"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Jurusan"
+        android:id="@+id/input_mhs_jurusan"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/orange"
+        android:layout_height="wrap_content"
+        android:text="Tambah"
+        android:id="@+id/input_mhs_tambah" />
+</LinearLayout>
